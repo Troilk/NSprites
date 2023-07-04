@@ -107,8 +107,8 @@ namespace NSprites
             var quad = new Mesh();
             quad.vertices = new Vector3[4]
             {
-                new Vector3(0f, 1f, 0f),    //left up
-                new Vector3(1f, 1f, 0f),    //right up
+                new Vector3(0f, 0f, 1f),    //left up
+                new Vector3(1f, 0f, 1f),    //right up
                 new Vector3(0f, 0f, 0f),    //left down
                 new Vector3(1f, 0f, 0f)     //right down
             };
@@ -123,10 +123,10 @@ namespace NSprites
 
             quad.normals = new Vector3[4]
             {
-                -Vector3.forward,
-                -Vector3.forward,
-                -Vector3.forward,
-                -Vector3.forward
+                -Vector3.up,
+                -Vector3.up,
+                -Vector3.up,
+                -Vector3.up
             };
 
             quad.uv = new Vector2[4]
